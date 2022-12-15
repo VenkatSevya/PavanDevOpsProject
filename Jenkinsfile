@@ -85,7 +85,7 @@ pipeline {
 	}
 	//To download war files from s3 bucket to tomcat 
 	stage('Deploy to Tomcat from S3') {
-	    steps {
+	    steps {   
 			
 
 	        sh " sudo aws s3 cp s3://testbucketpav/webapp/target/webapp.war /opt/tomcat/webapps/" 
