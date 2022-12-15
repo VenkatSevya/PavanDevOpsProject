@@ -9,7 +9,7 @@ pipeline {
 	AWS_ACCOUNT_ID = "962826464166" 
 	AWS_DEFAULT_REGION = "us-east-1"
 	IMAGE_REPO_NAME = "webapp"
-	IMAGE_TAG = "Build:${BUILD_NUMBER}"
+	IMAGE_TAG = "${BUILD_NUMBER}"
 	REPOSIT_URL = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazon.aws.com/${IMAGE_REPO_NAME}"
   }
 
